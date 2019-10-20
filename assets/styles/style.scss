@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+         url('../fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+html {
+    box-sizing: border-box;
+};
+
+*, *::before, *::after {
+    box-sizing: inherit;
+};
+
+body {
+    max-width: 375px;
+
+}
+
+.info_avatar--image {
+    max-width: 100px;
+}
+
+.education_accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+.education_panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    transition: 0.4s ease;
+
+    &.visible {
+        display: block;
+    }
+}

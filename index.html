@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+
+</head>
+
+<body>
+    <header class="info">
+        <div class="info_avatar">
+            <img src="./assets/images/BnXACu6CHJA.jpg" alt="my photo" class="info_avatar--image">
+        </div>
+        <div class="info_description">
+            <h1 class="info--name">Angelina Pobyvanets</h1>
+            <a href="https://github.com/Lina-malina" class="info--link git_hub_link" target="_blank">Lina-malina</a>
+        </div>
+    </header>
+    <main>
+        <section class="education">
+            <div class="education_accordion">
+                <h2 class="education_heading">Education <span>&#709;</span></h2>
+            </div>
+            <div class="education_panel">
+                <ul class="education_list">
+                    <li class="education_list--item">School <br><span>2001-2010</span></li>
+                    <li class="education_list--item">Lyceum <br><span>2010-2012</span></li>
+                    <li class="education_list--item">BSMU <br><span>2012-2017</span></li>
+                    <li class="education_list--item">BSEU <br><span>2017-2018</span></li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="desktop_slide"></div>
+                        <div class="mobile_slide">
+                            <button class="mobile_slide--show_button" id="theyalow_button" onclick="changeDescription(this)">Show description</button>
+                            <a href="./projects/theyalow/index.html"><img src="./assets/images/theyalow.png" alt="theyalow image"
+                                class="mobile_slide--image theyalow"></a>
+                            <div class="mobile_slide--description" id="theyalow_description">
+                                <h2>Theyalow</h2>
+                                <ul>
+                                    <li>Pixel-perfect</li>
+                                    <li>Layout and positioning</li>
+                                    <li>Adaptive design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="desktop_slide"></div>
+                        <div class="mobile_slide">
+                            <button class="mobile_slide--show_button" id="repair_button" onclick="changeDescription(this)">Show description</button>
+                            <a href="./projects/repair-design-project/index.html"><img src="./assets/images/repair.png" alt="theyalow image"
+                                class="mobile_slide--image theyalow"></a>
+                            <div class="mobile_slide--description" id="repair_description">
+                                <h2>Repair-design-project</h2>
+                                <ul>
+                                    <li>Responsive design</li>
+                                    <li>Youtube integration</li>
+                                    <li>SCSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

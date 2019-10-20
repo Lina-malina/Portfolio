@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-v16-latin-regular.woff2") format("woff2"), url("../fonts/lato-v16-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  max-width: 375px;
+}
+
+.info_avatar--image {
+  max-width: 100px;
+}
+
+.education_accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+.education_panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.education_panel.visible {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
