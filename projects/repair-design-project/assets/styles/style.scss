@@ -1,0 +1,811 @@
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+      url('../fonts/ProximaNova-Regular.woff') format('woff'),
+      url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url('../fonts/FuturaBookC.eot');
+  src: url('../fonts/FuturaBookC.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/FuturaBookC.woff2') format('woff2'),
+      url('../fonts/FuturaBookC.woff') format('woff'),
+      url('../fonts/FuturaBookC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url('../fonts/FuturaDemiC.eot');
+  src: url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/FuturaDemiC.woff2') format('woff2'),
+      url('../fonts/FuturaDemiC.woff') format('woff'),
+      url('../fonts/FuturaDemiC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url('../fonts/FuturaMediumC.eot');
+  src: url('../fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/FuturaMediumC.woff2') format('woff2'),
+      url('../fonts/FuturaMediumC.woff') format('woff'),
+      url('../fonts/FuturaMediumC.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yeseva One Regular'), local('YesevaOne-Regular'),
+       url('../fonts/yeseva-one-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/yeseva-one-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+$mobile: 375px;
+
+  html {
+    box-sizing: border-box;
+  };
+  *, *::before, *::after {
+    box-sizing: inherit;
+  };
+
+.body_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+  body {
+    font-family: 'Yeseva One';
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  /* Header styles start*/
+
+  .header {
+    background-color: #131313;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header_wrapper {
+    height: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .header_logo {
+    margin-right: 60px;
+    margin-left: 20px;
+  
+  .header_logo--link {
+    text-decoration: none;
+    font-family: FuturaDemiC;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+}
+
+  .header_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header_list--item {
+    margin-right: 47px;
+    
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  
+  .header_list--link {
+    text-decoration: none;
+    font-family: FuturaBookC;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    &.active {
+      color: #E3B873;
+    }
+
+    &:hover {
+      opacity: .75;
+      cursor: pointer;
+    }
+  }
+
+  .tel_number {
+    font-family: FuturaDemiC;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid  #E3B873;
+    color: #E3B873;
+    margin: 0px 45px 0px 67px;
+  }
+
+  .header_button {
+    width: 160px;
+    height: 37px;
+    background-color:  #E3B873;
+    border-style: none;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px; 
+    font-family: FuturaDemiC;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#E3B873, 40);
+    }
+  }
+
+  /* Header styles end*/
+
+  /* Section intro styles start*/
+
+  .intro_wrapper {
+    background-color: #131313;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .intro_instagram_logo_block {
+    display: flex;
+    width: 6%;
+    height: 707px;
+    justify-content: center;
+    align-items: center;
+
+    .intro_instagram--link {
+      margin-top: -185px;
+    }
+  }
+
+  .intro_main_block {
+    width: 94%;
+    background-image: url(../images/intro_block_image.png);
+    background-size: cover;
+    height: 707px;
+
+    .intro_heading {
+      font-size: 40px;
+      line-height: 53px;
+      text-transform: uppercase;
+      max-width: 570px;
+      margin-top: 190px;
+      margin-left: 60px;
+      margin-bottom: 20px;
+
+      span {
+        color: #E3B873;
+      }
+    }
+
+    .intro_description{
+      font-family: FuturaBookC;
+      font-size: 22px;
+      line-height: 30px;
+      color: #FFFFFF;
+      max-width: 500px;
+      margin-left: 60px;
+      margin-bottom: 40px;
+    }
+
+    .intro_calc_button {
+      width: 207px;
+      height: 50px;
+      background-color: #E3B873;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+      border-radius: 2px;
+      font-family: FuturaDemiC;
+      font-size: 13px;
+      line-height: 15px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      border-style: none;
+      margin-left: 60px;
+      margin-right: 20px;
+      cursor: pointer;
+
+      &:hover {
+      background-color: darken(#E3B873, 40);
+      }
+    }
+
+    .intro_submit_button {
+      width: 207px;
+      height: 50px;
+      border: 1px solid #FFFFFF;
+      border-radius: 2px;
+      font-family: FuturaDemiC;
+      font-size: 13px;
+      line-height: 15px;
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      background: none;
+      cursor: pointer;
+
+      &:hover {
+      background-color: gray;
+      }
+    }
+  }
+
+  .intro_scroll_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97px;
+    width: 247px;
+    background-color:  #131313;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-top: -49px;
+    cursor: pointer;
+    img {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      color: darken(#FFF, 20);
+      img {
+        opacity: 0.75;
+      }
+    }
+  }
+  /* Section intro styles end*/
+
+  /* Section completed projects styles start*/
+
+  .completed_projects_wrapper {
+    height: 1070px;
+    background-color:  #131313;
+  }
+
+  .completed_projects_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 15%;
+    padding-top: 60px;
+
+    .completed_projects_list--item {
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+    }
+    
+    .completed_projects_list--link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      
+      &:hover {
+        color: #FFF;
+      }
+
+    }
+
+    .selected_project {
+        color: #E3B873;
+        border-bottom: 1px solid  #E3B873;
+
+        &:hover {
+          color: #FFF;
+        }
+
+      }
+
+  }
+
+.row_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-left:6%;
+
+  .completed_projects_description {
+    margin-right: 50px;
+    width: 35%;
+
+    .completed_projects_heading {
+      font-size: 27px;
+      letter-spacing: -0.07em;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: #E3B873;
+      margin-bottom: 34px;
+    }
+
+    .completed_projects_text {
+      font-family: FuturaBookC;
+      font-size: 18px;
+      line-height: 29px;
+    }
+
+  }
+    .completed_projects_slider {
+     max-width: 65%;
+     overflow-x: hidden;
+     display: flex;
+     margin-bottom: 95px;
+    }
+
+    img:first-child {
+      margin-right: 25px;
+    }
+}
+
+/* Section completed projects styles end*/
+
+/* Section online control styles start*/
+
+.online_control_wrapper {
+  height: 630px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .online_control_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -345px;
+    margin-bottom: 90px;
+  }
+
+  .online_control_video--heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;;
+    width: 185px;
+  }
+
+  .online_control_video--heading_icon {
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    color: #363636;
+    text-align: center;
+    margin-bottom: 90px;
+    width: 710px;
+    height: 130px;
+  }
+}
+
+
+.online_control_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 770px;
+  height: 100px;
+
+  .online_control_form--input {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+  }
+
+  #user_name, #user_phone {
+    width: 230px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    height: 45px;
+    margin-right: 50px;
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 24px;
+    color: #363636;
+  }
+
+  label {
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(54, 54, 54, 0.5);
+  }
+
+  .online_control_form--submit {
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: FuturaDemiC;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .online_control_form--agree {
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    color: #181818;
+    margin-top: 35px;
+  }
+
+}
+
+/* Section online control styles end*/
+
+/* Section types of repair start*/
+
+.types_of_repair_wrapper {
+  height: 1865px;
+  background-color: white;
+
+}
+
+.types_of_repair_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .types_of_repair--heading {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+    margin-top: 100px;
+    margin-bottom: 15px;
+  }
+
+}
+
+.types_of_repair_block {
+  width: 85%;
+  height: 610px;;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+
+  .types_of_repair_block--item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+    flex-grow: 1;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    .block_item--image img {
+      width: 100%;
+    }
+    
+    .block_item--price {
+      width: 228px;
+      height: 60px;
+      background-color: #E3B873;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-left: -86px;
+      margin-top: -30px;
+      text-align: center;
+      padding-top: 20px;;
+    }
+
+  }
+
+}
+
+.block_item--description {
+  height: 285px;
+  width: 80%;
+  background-color: white;
+  color: black;
+  margin-top: -130px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 34px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+  p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+  }
+
+  ul {
+    padding-left: 15px;
+    list-style: disc;
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 25px;
+    color: #959595;
+  }
+}
+
+.types_of_repair_circle_and_form_wrapper {
+  height: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: aquamarine;
+}
+
+.types_of_repair_form_block {
+  width: 35%;
+  height: 510px;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 6%;
+  margin-top: -135px;
+  margin-bottom: 20px;
+  padding-top: 25px;
+
+  .types_of_repair_form--text {
+    width: 265px;
+    height: 47px;
+    text-align: center;
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+
+  .types_of_repair_form--input {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    margin-bottom: 50px;
+    
+    &:nth-child(3) {
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-family: FuturaBookC;
+      font-size: 15px;
+      line-height: 15px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    #submit_repair_user_name,
+    #submit_repair_user_phone,
+    #submit_repair_user_email {
+      width: 410px;
+      height: 35px;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 1px solid  rgba(255, 255, 255, 0.15);
+      font-family: FuturaMediumC;
+      color: #FFF;
+      font-size: 18px;
+      line-height: 20px;
+
+      &::placeholder {
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.types_of_repair--agree {
+  display: inline;
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.types_of_repair_form--call {
+  margin-top: 30px;
+  margin-left: 195px;
+
+  .types_of_repair_form--call_button {
+    width: 213px;
+    height: 51px;
+    border: 0px;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    font-family: FuturaDemiC;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+}
+
+.types_of_repair_piggy_block {
+  width: 440px;
+  margin-top: 60px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  background-color: #FFF;
+
+  p {
+    display: inline-block;
+    width: 220px;
+    margin-top: 20px;
+    font-family: FuturaDemiC;
+    font-size: 20px;
+    line-height: 25px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+  }
+}
+
+
+.types_of_repair_circle {
+  width: 65%;
+  margin-top: -200px;
+  position: relative;
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  line-height: 21px;
+  color: #363636;
+  
+  .types_of_repair_circle--part {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+
+    &.part_1 {
+      top: 16%;
+      right: 13%;
+    }
+
+    &.part_2 {
+      top: 33%;
+      right: 36%;
+    }
+
+    &.part_3 {
+      top: 59%;
+      right: 30%;
+    }
+
+    &.part_4 {
+      top: 84%;
+      right: 5%;
+    }
+  }
+
+}
+
+.types_of_repair_circle--part_number {
+  border-radius: 50%;
+  max-width: 40px;
+  width: 100%;
+  min-height: 40px;
+  height: 100%;
+  background-color: #E3B873;
+  text-align: center;
+  padding-top: 10px;
+  font-family: Yeseva One;
+  margin-right: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Section types of repair end*/
+
+/* Section styles start*/
+
+.styles_wrapper {
+  height: 865px;
+  background-image: url('../images/styles_background.png');
+  background-size: cover;
+  display: flex;
+}
+
+.styles_text_wrapper {
+  width: 20%;
+  height: 625px;
+  margin: 137px 14% 0px 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .styles_heading {
+    margin-bottom: 40px;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+  }
+}
+
+.styles_list {
+  height: 515px;
+  width: 300px;
+
+  .styles_list--item {
+    margin-bottom: 20px;
+
+    .styles_list--link {
+      text-decoration: none;
+      font-family: Proxima Nova;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+
+      &.active {
+        border-bottom: 1px solid #E3B873; 
+        color: #E3B873;
+      }
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+}
+
+.styles_pictures {
+  width: 80%;
+  margin-right: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  .styles_pictures_container.first {
+    margin: -40px 40px 40px 0px;
+  }
+
+  & .second {
+    margin-top: -110px;
+  }
+
+  & .fourth {
+    margin-left: 40px;
+    margin-top: -360px;
+  }
+}
+
+/* Section styles end*/
+
