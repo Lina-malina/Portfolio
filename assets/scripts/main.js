@@ -8,8 +8,7 @@ var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    noSwiping: true,
-    noSwipingClass: 'desktop_slide',
+
 
     // If we need pagination
     pagination: {
