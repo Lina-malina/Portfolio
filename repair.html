@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repair design project</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body,
+        html {
+            height: 100%;
+        }
+        body {
+            background-color: rgba(0, 0, 0, .3);
+        }
+        .iframe_wrapper {
+            height: 100%;
+            width: 1440px;
+            margin: 0 auto;
+            transition: 1s ease;
+        }
+        iframe {
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+        .buttons_container {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe_wrapper">
+        <iframe src="./projects/repair-design-project/index.html" frameborder="0" width="1455" height="100%"></iframe>
+    </div>
+    <div class="buttons_container">
+        <button type="button" id="mobile_switcher">Mobile</button>
+        <button type="button" class="hidden" id="desktop_switcher">Desktop</button>
+        <button type="button" id="back">Back</button>
+    </div>
+    <script>
+        const mobileSwitcher = document.getElementById('mobile_switcher');
+        const desktopSwitcher = document.getElementById('desktop_switcher');
+        const backBtn = document.getElementById('back');
+        mobileSwitcher.addEventListener('click', () => {
+            const iframe = document.getElementsByTagName('iframe')[0];
+            iframe.width = '375';
+            document.getElementsByClassName('iframe_wrapper')[0].style.width = '375px';
+            desktopSwitcher.classList.remove('hidden');
+            mobileSwitcher.classList.add('hidden');
+        });
+        desktopSwitcher.addEventListener('click', () => {
+            const iframe = document.getElementsByTagName('iframe')[0];
+            iframe.width = '1455';
+            document.getElementsByClassName('iframe_wrapper')[0].style.width = '1455px';
+            mobileSwitcher.classList.remove('hidden');
+            desktopSwitcher.classList.add('hidden');
+        });
+        backBtn.addEventListener('click', () => {
+            window.location.href = './index.html'
+        });
+    </script>
+</body>
+</html>
