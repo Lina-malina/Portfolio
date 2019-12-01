@@ -1,0 +1,76 @@
+.request_button {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  @include font($size: 13px, $family: FuturaDemiC, $transform: uppercase);
+  @include button(160px, 37px, $color-brown, 0px 5px 15px rgba(227, 184, 115, 0.2));
+    &:hover {
+      background-color: darken($color-brown, 45);
+    }
+}
+
+.intro_calc_button {
+  @media screen and (max-width: $mobile) {
+    width: 338px;
+    margin: 0px 18px 26px;
+  }
+
+  @include button(207px, 50px, $color-brown, 0px 5px 15px rgba(227, 184, 115, 0.3));
+  @include font($size: 13px, $family: FuturaDemiC, $line: 15px, $transform: uppercase);
+  margin-left: 60px;
+  margin-right: 20px;
+    &:hover {
+    background-color: darken($color-brown, 40);
+    }
+}
+
+.intro_submit_button {
+  @media screen and (max-width: $mobile) {
+    width: 338px;
+    margin: 0px 18px 26px;
+  }
+  
+  @include button(207px, 50px, transparent, 0px 15px 15px $color-brown-shadow, $border: 1px solid $color-white);
+  @include font($size: 13px, $family: FuturaDemiC, $line: 15px, $transform: uppercase);
+    &:hover {
+    background-color: gray;
+    }
+}
+
+.online_control_form--submit {
+  @media screen and (max-width: $mobile) {
+    width: 340px;
+    margin: 0px;
+  }
+
+  @include button(200px, 50px, $color-brown, 0px 15px 15px $color-brown-shadow);
+  @include font($size: 15px, $family: FuturaDemiC, $transform: uppercase);
+  text-align: center;
+    &:hover {
+      background-color: darken($color-brown, 45);
+    }
+}
+
+.types_of_repair_form--call_button {
+  @include button(213px, 51px, $color-brown, 0px 15px 15px $color-brown-shadow, $radius: 0px);
+  @include font($size: 13px, $family: FuturaDemiC, $line: 18px, $transform: uppercase);
+  text-align: center;
+    &:hover {
+      background-color: darken($color-brown, 45);
+    }
+}
+
+.questions_form--submit_button {
+  @media screen and (max-width: $mobile) {
+    width: 340px;
+    margin: 0px;
+  }
+  
+  @include button(200px, 50px, $color-brown, 0px 5px 20px $color-brown-shadow);
+  @include font($size: 15px, $family: FuturaDemiC, $transform: uppercase);
+  text-align: center;
+    &:hover {
+      background-color: darken($color-brown, 45);
+    }
+}

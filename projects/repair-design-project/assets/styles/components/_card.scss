@@ -1,0 +1,173 @@
+%block_item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+    flex-grow: 1;
+        &:last-child {
+            margin-right: 0px;
+        }
+}
+%block_item--description {
+    width: 80%;
+    background-color: $color-white;
+    margin-top: -130px;
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 34px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+        p {
+            margin-bottom: 5px;
+            @include font($color: $color-dark-gray, $size: 18px); 
+        }
+        ul {
+            @include font($color: $color-secondary-gray, $size: 15px, $family: FuturaBookC, $line: 25px); 
+            padding-left: 15px;
+            list-style: disc;
+        }
+}
+%block_item--price {
+    @include font($color: $color-white, $size: 18px, $transform: uppercase); 
+    width: 228px;
+    height: 60px;
+    background-color: $color-brown;
+    padding-top: 24px;;
+    margin-left: -86px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.types_of_repair_block {
+    @media screen and (max-width: $mobile) {
+        height: 100%;
+        margin-top: 0px;
+    }   
+
+    height: 610px;;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+        .types_of_repair_block--item {
+            @media screen and (max-width: $mobile) {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 30px 20px;
+            }   
+        
+            @extend %block_item;
+                .repair_block_item--image img {
+                    @media screen and (max-width: $mobile) {
+                        width: 340px;
+                    }
+
+                    width: 100%;
+                }
+        }
+}
+  
+.repair_block_item--description {
+    @media screen and (max-width: $mobile) {
+        height: 260px;
+        font-size: 13px;
+        line-height: 169.8%;
+        padding-top: 20px;
+        padding-left: 30px;
+            p {
+                font-size: 15px;
+                line-height: 138.6%;
+            }
+    }  
+
+    @extend %block_item--description;
+    height: 285px;
+}
+
+.repair_block_item--price {
+    @media screen and (max-width: $mobile) {
+        width: 190px;
+        height: 40px;
+        background-color: $color-brown;
+        padding-top: 11px;
+        margin-left: 0px;
+        margin-top: -22px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 138.6%;
+    } 
+
+    @extend %block_item--price;
+}
+
+.design_project_block {
+    display: flex;
+    flex-wrap: wrap;
+        .design_project_block--item {
+            @media screen and (max-width: $mobile) {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 30px 20px;
+            }  
+            @extend %block_item;
+                .design_block_item--image img {
+                    @media screen and (max-width: $mobile) {
+                        width: 340px;
+                    }
+
+                    width: 100%;
+                }
+
+        }
+}
+
+.design_block_item--description {
+    @media screen and (max-width: $mobile) {
+        font-size: 13px;
+        line-height: 169.8%;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-bottom: 35px;
+            p {
+                font-size: 15px;
+                line-height: 138.6%;
+            }
+                ul.desktop {
+                    display: block;
+                }
+                ul.mobile {
+                    display: none;
+                }
+    }
+
+    @extend %block_item--description;
+    padding-bottom: 65px;
+        ul.mobile {
+            display: block;
+        }
+        ul.desktop {
+            display: none;
+        }
+}
+
+.design_block_item--price {
+    @media screen and (max-width: $mobile) {
+        width: 190px;
+        height: 40px;
+        background-color: $color-brown;
+        padding-top: 11px;
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-top: -22px;
+        text-align: center;
+        font-size: 15px;
+        line-height: 138.6%;
+    } 
+
+    @extend %block_item--price;
+    text-align: left;
+    padding-left: 30px;
+}

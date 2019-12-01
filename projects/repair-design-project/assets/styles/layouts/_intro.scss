@@ -1,0 +1,88 @@
+.intro_wrapper {
+  background-color: $color-black;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.intro_instagram_logo_block {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  @include flex();
+  flex-grow: 1.8;
+  height: 707px;
+    .intro_instagram--link {
+      margin-top: -130px;
+    }
+}
+
+.intro_main_block {
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    height: 476px;
+  }
+
+  flex-grow: 17;
+  background-image: url(../images/intro_block_image.png);
+  background-size: cover;
+  height: 707px;
+}
+
+.intro_heading {
+  @media screen and (max-width: $mobile) {
+    font-size: 23px;
+    line-height: 132.83%;
+    width: 80%;
+    margin: 85px 0px 0px 18px;
+  }
+
+  @include font($size: 40px, $line: 53px, $transform: uppercase);
+  max-width: 570px;
+  margin-top: 190px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+    span {
+      color: $color-brown;
+    }
+}
+
+.intro_description{
+  @media screen and (max-width: $mobile) {
+    font-size: 18px;
+    line-height: 135.84%;
+    width: 80%;
+    margin: 15px 18px 32px;
+  }
+
+  @include font($size: 22px, $family: FuturaBookC, $line: 30px);
+  max-width: 500px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+.intro_scroll_block {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  @include flex();
+  @include font($size: 17px, $transform: uppercase);
+  position: absolute;
+  top: 93%;
+  left: 1.2%;
+  height: 97px;
+  width: 247px;
+  background-color:  $color-black;
+  cursor: pointer;
+    img {
+      margin-left: 20px;
+    }
+    &:hover {
+      color: darken($color-white, 20);
+      img {
+        opacity: 0.75;
+      }
+    }
+}

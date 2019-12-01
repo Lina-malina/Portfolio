@@ -1,0 +1,2820 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body_wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main {
+  position: relative;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBookC';
+  src: url("../fonts/FuturaBookC.eot");
+  src: url("../fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBookC.woff2") format("woff2"), url("../fonts/FuturaBookC.woff") format("woff"), url("../fonts/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url("../fonts/FuturaDemiC.eot");
+  src: url("../fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaDemiC.woff2") format("woff2"), url("../fonts/FuturaDemiC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaMediumC';
+  src: url("../fonts/FuturaMediumC.eot");
+  src: url("../fonts/FuturaMediumC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaMediumC.woff2") format("woff2"), url("../fonts/FuturaMediumC.woff") format("woff"), url("../fonts/FuturaMediumC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Yeseva One Regular"), local("YesevaOne-Regular"), url("../fonts/yeseva-one-v14-latin-regular.woff2") format("woff2"), url("../fonts/yeseva-one-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.request_button {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+  width: 160px;
+  height: 37px;
+  background-color: #E3B873;
+  border: 0px;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .request_button {
+    display: none;
+  }
+}
+
+.request_button:hover {
+  background-color: #5e4113;
+}
+
+.intro_calc_button {
+  width: 207px;
+  height: 50px;
+  background-color: #E3B873;
+  border: 0px;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 15px;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .intro_calc_button {
+    width: 338px;
+    margin: 0px 18px 26px;
+  }
+}
+
+.intro_calc_button:hover {
+  background-color: #735017;
+}
+
+.intro_submit_button {
+  width: 207px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .intro_submit_button {
+    width: 338px;
+    margin: 0px 18px 26px;
+  }
+}
+
+.intro_submit_button:hover {
+  background-color: gray;
+}
+
+.online_control_form--submit {
+  width: 200px;
+  height: 50px;
+  background-color: #E3B873;
+  border: 0px;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_form--submit {
+    width: 340px;
+    margin: 0px;
+  }
+}
+
+.online_control_form--submit:hover {
+  background-color: #5e4113;
+}
+
+.types_of_repair_form--call_button {
+  width: 213px;
+  height: 51px;
+  background-color: #E3B873;
+  border: 0px;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 0px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+
+.types_of_repair_form--call_button:hover {
+  background-color: #5e4113;
+}
+
+.questions_form--submit_button {
+  width: 200px;
+  height: 50px;
+  background-color: #E3B873;
+  border: 0px;
+  -webkit-box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.15);
+          box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form--submit_button {
+    width: 340px;
+    margin: 0px;
+  }
+}
+
+.questions_form--submit_button:hover {
+  background-color: #5e4113;
+}
+
+.types_of_repair_block .types_of_repair_block--item, .design_project_block .design_project_block--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.types_of_repair_block .types_of_repair_block--item:last-child, .design_project_block .design_project_block--item:last-child {
+  margin-right: 0px;
+}
+
+.repair_block_item--description, .design_block_item--description {
+  width: 80%;
+  background-color: #FFFFFF;
+  margin-top: -130px;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 34px;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.repair_block_item--description p, .design_block_item--description p {
+  margin-bottom: 5px;
+  color: #363636;
+  font-size: 18px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: none;
+  line-height: 16px;
+}
+
+.repair_block_item--description ul, .design_block_item--description ul {
+  color: #959595;
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 25px;
+  padding-left: 15px;
+  list-style: disc;
+}
+
+.repair_block_item--price, .design_block_item--price {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+  width: 228px;
+  height: 60px;
+  background-color: #E3B873;
+  padding-top: 24px;
+  margin-left: -86px;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.types_of_repair_block {
+  height: 610px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_block {
+    height: 100%;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_block .types_of_repair_block--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 30px 20px;
+  }
+}
+
+.types_of_repair_block .types_of_repair_block--item .repair_block_item--image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_block .types_of_repair_block--item .repair_block_item--image img {
+    width: 340px;
+  }
+}
+
+.repair_block_item--description {
+  height: 285px;
+}
+
+@media screen and (max-width: 375px) {
+  .repair_block_item--description {
+    height: 260px;
+    font-size: 13px;
+    line-height: 169.8%;
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+  .repair_block_item--description p {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .repair_block_item--price {
+    width: 190px;
+    height: 40px;
+    background-color: #E3B873;
+    padding-top: 11px;
+    margin-left: 0px;
+    margin-top: -22px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+}
+
+.design_project_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 375px) {
+  .design_project_block .design_project_block--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 30px 20px;
+  }
+}
+
+.design_project_block .design_project_block--item .design_block_item--image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+  .design_project_block .design_project_block--item .design_block_item--image img {
+    width: 340px;
+  }
+}
+
+.design_block_item--description {
+  padding-bottom: 65px;
+}
+
+@media screen and (max-width: 375px) {
+  .design_block_item--description {
+    font-size: 13px;
+    line-height: 169.8%;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 35px;
+  }
+  .design_block_item--description p {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  .design_block_item--description ul.desktop {
+    display: block;
+  }
+  .design_block_item--description ul.mobile {
+    display: none;
+  }
+}
+
+.design_block_item--description ul.mobile {
+  display: block;
+}
+
+.design_block_item--description ul.desktop {
+  display: none;
+}
+
+.design_block_item--price {
+  text-align: left;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .design_block_item--price {
+    width: 190px;
+    height: 40px;
+    background-color: #E3B873;
+    padding-top: 11px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: -22px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+}
+
+.online_control_video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -345px;
+  margin-bottom: 75px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+.online_control_video iframe {
+  width: 820px;
+  height: 435px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_video iframe {
+    width: 340px;
+    height: 207px;
+  }
+}
+
+.online_control_form .online_control_form--input, .types_of_repair_form--input, .questions_form--input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50px;
+}
+
+.online_control_form #user_name, .online_control_form #user_phone, .types_of_repair_form--input #submit_repair_user_name,
+.types_of_repair_form--input #submit_repair_user_phone,
+.types_of_repair_form--input #submit_repair_user_email, .questions_form--input #questions_user_name,
+.questions_form--input #questions_user_phone,
+.questions_form--input #questions_user_question {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.online_control_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 770px;
+  height: 100px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_form {
+    width: 340px;
+    height: 311px;
+  }
+}
+
+.online_control_form #user_name, .online_control_form #user_phone {
+  color: #363636;
+  font-size: 18px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 24px;
+  width: 230px;
+  height: 45px;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_form #user_name, .online_control_form #user_phone {
+    color: #FFFFFF;
+    line-height: 138.72%;
+    width: 340px;
+    margin-right: 0px;
+  }
+  .online_control_form #user_name::-webkit-input-placeholder, .online_control_form #user_phone::-webkit-input-placeholder {
+    color: #FFFFFF;
+  }
+  .online_control_form #user_name:-ms-input-placeholder, .online_control_form #user_phone:-ms-input-placeholder {
+    color: #FFFFFF;
+  }
+  .online_control_form #user_name::-ms-input-placeholder, .online_control_form #user_phone::-ms-input-placeholder {
+    color: #FFFFFF;
+  }
+  .online_control_form #user_name::placeholder, .online_control_form #user_phone::placeholder {
+    color: #FFFFFF;
+  }
+}
+
+.online_control_form label {
+  color: rgba(54, 54, 54, 0.5);
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_form label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.online_control_form .online_control_form--agree {
+  color: #181818;
+  font-size: 16px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 22px;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_form .online_control_form--agree {
+    color: #FFFFFF;
+    margin-top: 0px;
+  }
+}
+
+.types_of_repair_form_block {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 510px;
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 6%;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_form_block {
+    display: none;
+  }
+}
+
+.types_of_repair_form_block .types_of_repair_form--text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 25px;
+  width: 265px;
+  height: 47px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.types_of_repair_form--input {
+  margin-bottom: 50px;
+}
+
+.types_of_repair_form--input:nth-child(3) {
+  margin-bottom: 15px;
+}
+
+.types_of_repair_form--input label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 15px;
+}
+
+.types_of_repair_form--input #submit_repair_user_name,
+.types_of_repair_form--input #submit_repair_user_phone,
+.types_of_repair_form--input #submit_repair_user_email {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: FuturaMediumC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 20px;
+  width: 410px;
+  height: 35px;
+}
+
+.types_of_repair_form--input #submit_repair_user_name::-webkit-input-placeholder,
+.types_of_repair_form--input #submit_repair_user_phone::-webkit-input-placeholder,
+.types_of_repair_form--input #submit_repair_user_email::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.types_of_repair_form--input #submit_repair_user_name:-ms-input-placeholder,
+.types_of_repair_form--input #submit_repair_user_phone:-ms-input-placeholder,
+.types_of_repair_form--input #submit_repair_user_email:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.types_of_repair_form--input #submit_repair_user_name::-ms-input-placeholder,
+.types_of_repair_form--input #submit_repair_user_phone::-ms-input-placeholder,
+.types_of_repair_form--input #submit_repair_user_email::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.types_of_repair_form--input #submit_repair_user_name::placeholder,
+.types_of_repair_form--input #submit_repair_user_phone::placeholder,
+.types_of_repair_form--input #submit_repair_user_email::placeholder {
+  color: #FFFFFF;
+}
+
+.types_of_repair--agree {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 22px;
+  display: inline;
+}
+
+.types_of_repair_form--call {
+  margin-top: 30px;
+  margin-left: 195px;
+}
+
+.questions_form_block {
+  width: 520px;
+  height: 377px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form_block {
+    width: 340px;
+    height: 500px;
+  }
+}
+
+.questions_form_block .questions_form--text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+  width: 257px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form_block .questions_form--text {
+    margin-bottom: 50px;
+  }
+}
+
+.questions_form--input {
+  margin-bottom: 50px;
+}
+
+.questions_form--input:nth-child(1) {
+  margin-right: 56px;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form--input:nth-child(1) {
+    margin-right: 0px;
+  }
+}
+
+.questions_form--input label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 20px;
+}
+
+.questions_form--input #questions_user_name,
+.questions_form--input #questions_user_phone,
+.questions_form--input #questions_user_question {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 24px;
+  width: 230px;
+  height: 45px;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form--input #questions_user_name,
+  .questions_form--input #questions_user_phone,
+  .questions_form--input #questions_user_question {
+    width: 340px;
+  }
+}
+
+.questions_form--input #questions_user_name::-webkit-input-placeholder,
+.questions_form--input #questions_user_phone::-webkit-input-placeholder,
+.questions_form--input #questions_user_question::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.questions_form--input #questions_user_name:-ms-input-placeholder,
+.questions_form--input #questions_user_phone:-ms-input-placeholder,
+.questions_form--input #questions_user_question:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.questions_form--input #questions_user_name::-ms-input-placeholder,
+.questions_form--input #questions_user_phone::-ms-input-placeholder,
+.questions_form--input #questions_user_question::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.questions_form--input #questions_user_name::placeholder,
+.questions_form--input #questions_user_phone::placeholder,
+.questions_form--input #questions_user_question::placeholder {
+  color: #FFFFFF;
+}
+
+.questions_form--input #questions_user_question {
+  width: 517px;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form--input #questions_user_question {
+    width: 340px;
+  }
+}
+
+.questions_form--agree {
+  width: 285px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form--agree {
+    margin: 0px;
+  }
+}
+
+.questions_form--agree .questions_form--agree_text {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 22px;
+  display: inline;
+}
+
+.questions_form--submit {
+  width: 200px;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_form--submit {
+    width: 340px;
+    margin: 65px 0px 0px;
+  }
+}
+
+.questions--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 375px) {
+  .questions--row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  div#question {
+    margin-bottom: 20px;
+  }
+}
+
+.header,
+.footer {
+  background-color: #131313;
+  height: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.logo {
+  margin-right: 60px;
+  margin-left: 35px;
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: 0px;
+  }
+}
+
+.logo--link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #E3B873;
+  font-size: 14px;
+  font-family: FuturaDemiC;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 375px) {
+  .logo--link {
+    font-size: 12px;
+  }
+}
+
+.navigation_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  .navigation_list {
+    display: none;
+  }
+}
+
+.navigation_list--item {
+  margin-right: 47px;
+}
+
+.navigation_list--item:last-child {
+  margin-right: 0px;
+}
+
+.navigation_list--link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.navigation_list--link.active {
+  color: #E3B873;
+}
+
+.navigation_list--link:hover {
+  opacity: .75;
+}
+
+.tel_number {
+  color: #E3B873;
+  font-size: 14px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid #E3B873;
+  margin: 0px 45px 0px 67px;
+}
+
+@media screen and (max-width: 375px) {
+  .tel_number {
+    margin: 0px;
+    font-size: 12px;
+    border-bottom: 0px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    display: none;
+  }
+}
+
+.intro_wrapper {
+  background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.intro_instagram_logo_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1.8;
+      -ms-flex-positive: 1.8;
+          flex-grow: 1.8;
+  height: 707px;
+}
+
+@media screen and (max-width: 375px) {
+  .intro_instagram_logo_block {
+    display: none;
+  }
+}
+
+.intro_instagram_logo_block .intro_instagram--link {
+  margin-top: -130px;
+}
+
+.intro_main_block {
+  -webkit-box-flex: 17;
+      -ms-flex-positive: 17;
+          flex-grow: 17;
+  background-image: url(../images/intro_block_image.png);
+  background-size: cover;
+  height: 707px;
+}
+
+@media screen and (max-width: 375px) {
+  .intro_main_block {
+    width: 100%;
+    height: 476px;
+  }
+}
+
+.intro_heading {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 53px;
+  max-width: 570px;
+  margin-top: 190px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .intro_heading {
+    font-size: 23px;
+    line-height: 132.83%;
+    width: 80%;
+    margin: 85px 0px 0px 18px;
+  }
+}
+
+.intro_heading span {
+  color: #E3B873;
+}
+
+.intro_description {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 30px;
+  max-width: 500px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .intro_description {
+    font-size: 18px;
+    line-height: 135.84%;
+    width: 80%;
+    margin: 15px 18px 32px;
+  }
+}
+
+.intro_scroll_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+  position: absolute;
+  top: 93%;
+  left: 1.2%;
+  height: 97px;
+  width: 247px;
+  background-color: #131313;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .intro_scroll_block {
+    display: none;
+  }
+}
+
+.intro_scroll_block img {
+  margin-left: 20px;
+}
+
+.intro_scroll_block:hover {
+  color: #cccccc;
+}
+
+.intro_scroll_block:hover img {
+  opacity: 0.75;
+}
+
+.completed_projects_wrapper {
+  height: 1070px;
+  background-color: #131313;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_wrapper {
+    height: 695px;
+  }
+}
+
+.completed_projects_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 15%;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_list {
+    display: none;
+  }
+}
+
+.completed_projects_list--item {
+  margin-right: 60px;
+}
+
+.completed_projects_list--item:last-child {
+  margin-right: 0px;
+}
+
+.completed_projects_list--link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff4d;
+  font-size: 14px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.completed_projects_list--link:hover {
+  color: #FFFFFF;
+}
+
+.selected_project {
+  color: #E3B873;
+  border-bottom: 1px solid #E3B873;
+}
+
+.selected_project:hover {
+  color: #FFFFFF;
+}
+
+.row_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 45px;
+  margin-left: 6%;
+}
+
+@media screen and (max-width: 375px) {
+  .row_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+}
+
+.completed_projects_description {
+  margin-right: 7%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description {
+    margin-right: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.completed_projects_description--title {
+  margin-bottom: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description--title {
+    margin-bottom: 34px;
+    padding-top: 35px;
+    display: block;
+  }
+}
+
+.completed_projects_description--title .completed_projects_heading {
+  color: #E3B873;
+  font-size: 27px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description--title .completed_projects_heading {
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+  }
+}
+
+.completed_projects_description--title .completed_projects--break {
+  margin: 20px 0px 0px 10px;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description--title .completed_projects--break {
+    display: none;
+  }
+}
+
+.completed_projects_description--text {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description--text {
+    margin-bottom: 35px;
+  }
+}
+
+.completed_projects_description--text .completed_projects_text {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 29px;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description--text .completed_projects_text {
+    width: 310px;
+    height: 86px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 158.48%;
+    text-align: center;
+  }
+}
+
+.completed_projects_description--block {
+  height: 145px;
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description--block {
+    height: 145px;
+    width: 341px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.completed_projects_description--block .description_block--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.description_block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.description_block.city {
+  margin-bottom: 25px;
+}
+
+.description_block.apartment {
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 375px) {
+  .description_block.apartment {
+    margin-bottom: 28px;
+  }
+}
+
+.description_block span.main {
+  display: block;
+  color: #E3B873;
+  font-size: 18px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 375px) {
+  .description_block span.main {
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+}
+
+.description_block span.secondary {
+  display: block;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .description_block span.secondary {
+    font-size: 14px;
+    line-height: 135.84%;
+  }
+}
+
+.completed_projects_description--pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_description--pagination {
+    display: none;
+  }
+}
+
+.completed_projects_description--pagination div.circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65px;
+  margin: 0px 30px;
+}
+
+.completed_projects_description--pagination div.circles span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.completed_projects_description--pagination div.circles span.active {
+  background-color: #FFFFFF;
+}
+
+.completed_projects_slider {
+  position: relative;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.completed_projects_slider img:first-child {
+  margin-right: 15px;
+}
+
+.completed_projects_slider img:nth-child(3) {
+  position: absolute;
+  left: 87%;
+  top: 40%;
+  cursor: pointer;
+}
+
+.completed_projects_slider--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .completed_projects_slider {
+    display: none;
+  }
+  .completed_projects_slider--mobile {
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .completed_projects_slider--mobile img:first-child {
+    position: absolute;
+    left: 8%;
+    top: 38%;
+  }
+  .completed_projects_slider--mobile img:nth-child(2) {
+    display: block;
+    margin: 0 auto;
+  }
+  .completed_projects_slider--mobile img:nth-child(3) {
+    position: absolute;
+    left: 80%;
+    top: 38%;
+  }
+}
+
+.online_control_wrapper {
+  height: 630px;
+  background-color: rgba(243, 239, 239, 0.164);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_wrapper {
+    height: 890px;
+    background-color: #131313;
+    margin-top: -1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.online_control_video--heading {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin-bottom: 20px;
+  width: 185px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_video--heading {
+    font-size: 22px;
+    line-height: 138.6%;
+    width: 196px;
+  }
+}
+
+.online_control_video--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 115px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control_video--icon {
+    margin-bottom: 30px;
+  }
+}
+
+.online_control--description {
+  color: #181818;
+  font-size: 20px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 34px;
+  text-align: center;
+  margin: 50px 0px 90px;
+  width: 710px;
+  height: 130px;
+}
+
+@media screen and (max-width: 375px) {
+  .online_control--description {
+    text-align: center;
+    margin: 22px 0px 40px;
+    width: 340px;
+    height: 140px;
+    font-size: 14px;
+    line-height: 169.8%;
+    color: #FFFFFF;
+  }
+}
+
+.types_of_repair_wrapper {
+  height: 1920px;
+  background-color: rgba(243, 239, 239, 0.164);
+  padding-top: 135px;
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_wrapper {
+    height: 1770px;
+    padding-top: 0px;
+    margin-top: -1px;
+    background-color: #131313;
+  }
+}
+
+.types_of_repair_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.types_of_repair_description .types_of_repair--heading {
+  color: #181818;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_description .types_of_repair--heading {
+    font-size: 22px;
+    line-height: 138.6%;
+    color: #FFFFFF;
+  }
+}
+
+.types_of_repair_circle_and_form_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 210px;
+}
+
+.types_of_repair_circle {
+  color: #363636;
+  font-size: 18px;
+  font-family: FuturaMediumC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 21px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  position: relative;
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_circle {
+    display: none;
+  }
+}
+
+.types_of_repair_circle .parts_circle {
+  position: absolute;
+  border: 3px solid #E3B873;
+  width: 654px;
+  height: 630px;
+  top: -6%;
+  left: -20%;
+  border-radius: 50%;
+}
+
+.types_of_repair_circle .parts_circle::before {
+  content: "";
+  width: 26%;
+  background-color: #FFFFFF;
+  height: 100%;
+  position: absolute;
+}
+
+.types_of_repair_circle--part {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 450px;
+}
+
+.types_of_repair_circle--part.part_1 {
+  top: 3%;
+  right: 8%;
+}
+
+.types_of_repair_circle--part.part_2 {
+  top: 24%;
+  right: 28%;
+}
+
+.types_of_repair_circle--part.part_3 {
+  top: 53%;
+  right: 25%;
+}
+
+.types_of_repair_circle--part.part_4 {
+  top: 82%;
+  right: 23.5%;
+}
+
+.types_of_repair_circle--part_number {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: none;
+  line-height: 22px;
+  border-radius: 50%;
+  max-width: 40px;
+  width: 100%;
+  min-height: 40px;
+  height: 100%;
+  background-color: #E3B873;
+  text-align: center;
+  padding-top: 10px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.types_of_repair_circle--part_text.free {
+  width: 145px;
+}
+
+.types_of_repair_circle--part_text.get {
+  width: 220px;
+}
+
+.types_of_repair_piggy_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 440px;
+  margin-top: 60px;
+  margin-left: -30px;
+}
+
+@media screen and (max-width: 375px) {
+  .types_of_repair_piggy_block {
+    display: none;
+  }
+}
+
+.types_of_repair_piggy_block p {
+  color: #E3B873;
+  font-size: 20px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 25px;
+  display: inline-block;
+  width: 220px;
+  margin-top: -15px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.styles_wrapper {
+  height: 865px;
+  background-image: url("../images/styles_background.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 375px) {
+  .styles_wrapper {
+    height: 410px;
+    background-image: none;
+    background-color: #131313;
+    margin-top: -1px;
+    padding-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.styles_text_wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 625px;
+  margin: 137px 14% 0px 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 375px) {
+  .styles_text_wrapper {
+    display: block;
+    height: 66px;
+    width: 310px;
+    margin: 0px auto 25px;
+  }
+}
+
+.styles_text_wrapper .styles_heading {
+  color: #E3B873;
+  font-size: 27px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 37px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .styles_text_wrapper .styles_heading {
+    display: block;
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+
+.styles_list {
+  height: 515px;
+  width: 300px;
+}
+
+@media screen and (max-width: 375px) {
+  .styles_list {
+    display: none;
+  }
+}
+
+.styles_list .styles_list--item {
+  margin-bottom: 20px;
+}
+
+.styles_list .styles_list--item .styles_list--link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: Proxima Nova;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 30px;
+}
+
+.styles_list .styles_list--item .styles_list--link.active {
+  border-bottom: 1px solid #E3B873;
+  color: #E3B873;
+}
+
+.styles_list .styles_list--item .styles_list--link:hover {
+  opacity: .75;
+}
+
+.styles_pictures {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  margin-right: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 375px) {
+  .styles_pictures {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .styles_pictures .styles_pictures_container {
+    display: none;
+  }
+}
+
+.styles_pictures .styles_pictures_container.first {
+  margin: -40px 40px 40px 0px;
+}
+
+.styles_pictures .second {
+  margin-top: -110px;
+}
+
+.styles_pictures .fourth {
+  margin-left: 40px;
+  margin-top: -360px;
+}
+
+.styles_pictures--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .styles_pictures--mobile {
+    display: block;
+    position: relative;
+  }
+  .styles_pictures--mobile img:first-child {
+    position: absolute;
+    left: 5%;
+    top: 38%;
+  }
+  .styles_pictures--mobile img:nth-child(2) {
+    display: block;
+    margin: 0 auto;
+  }
+  .styles_pictures--mobile img:nth-child(3) {
+    position: absolute;
+    left: 85%;
+    top: 38%;
+  }
+}
+
+.design_project_wrapper {
+  background-color: rgba(243, 239, 239, 0.164);
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 375px) {
+  .design_project_wrapper {
+    height: 1850px;
+    background-color: #131313;
+    padding-top: 0px;
+    margin-top: -1px;
+  }
+}
+
+.design_project_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design_project_description .design_project--heading {
+  color: #181818;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .design_project_description .design_project--heading {
+    font-size: 22px;
+    line-height: 138.6%;
+    color: #FFFFFF;
+  }
+}
+
+.design_project_description .design_project--text {
+  color: #363636;
+  font-size: 20px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 27px;
+  width: 763px;
+  height: 57px;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .design_project_description .design_project--text {
+    width: 277px;
+    height: 76px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 135.84%;
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .steps {
+    display: none;
+  }
+}
+
+.steps_wrapper {
+  height: 1616px;
+  background-color: #131313;
+  margin-top: -455px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steps_wrapper .steps_context_block {
+  width: 85%;
+  height: 680px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -77px;
+}
+
+.steps_context_block--column-left {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 7%;
+}
+
+.steps_heading_block {
+  position: relative;
+}
+
+.steps_heading_block h3 {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: FuturaDemiC;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.steps_heading_block h2 {
+  color: #E3B873;
+  font-size: 27px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 37px;
+  margin-bottom: 95px;
+}
+
+.steps_heading_block img {
+  position: absolute;
+  top: 45%;
+  left: 125%;
+}
+
+.steps_description_block h3 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.steps_description_block h4 {
+  color: #E3B873;
+  font-size: 15px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+.steps_description_block p {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 25px;
+}
+
+.steps_context_block--column-right {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.steps_context_block--column-right .steps_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.steps_context_block--column-right .steps_block .steps_block--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+
+.steps_context_block--column-right .steps_image_block {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-height: 376px;
+  padding-top: 20px;
+}
+
+.steps_block--step {
+  width: 130px;
+  height: 70px;
+}
+
+.steps_block--step .steps_block--step_number {
+  width: 20px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 21px;
+  opacity: 0.3;
+  border-bottom: 1px solid #E3B873;
+  margin-bottom: 10px;
+}
+
+.steps_block--step .steps_block--step_text {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.steps_block--step .active {
+  opacity: 1;
+}
+
+.steps--pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 85px;
+  cursor: pointer;
+}
+
+.steps--pagination div.circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 130px;
+  margin: 0px 30px;
+}
+
+.steps--pagination div.circles span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.steps--pagination div.circles span.active {
+  background-color: #FFFFFF;
+}
+
+.team_wrapper {
+  height: 413px;
+  background-color: #131313;
+  margin-top: -390px;
+}
+
+@media screen and (max-width: 375px) {
+  .team_wrapper {
+    height: 1685px;
+    background-color: #131313;
+    margin-top: 0px;
+  }
+}
+
+.team_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team_description .team_description--heading {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .team_description .team_description--heading {
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+}
+
+.team_description .team_description--heading_text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 27px;
+  width: 476px;
+  height: 57px;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .team_description .team_description--heading_text {
+    font-size: 15px;
+    line-height: 135.84%;
+    width: 300px;
+    height: 42px;
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+
+.team_members_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 35px;
+  margin-bottom: 50px;
+}
+
+.team_members_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  margin-right: 105px;
+}
+
+@media screen and (max-width: 375px) {
+  .team_members_card {
+    margin-right: 0px;
+    margin-bottom: 80px;
+  }
+}
+
+.team_members_card:last-child {
+  margin-right: 0px;
+}
+
+.team_members_card--name {
+  width: 86%;
+  height: 93px;
+  background-color: #FFFFFF;
+  margin-top: -83px;
+  color: #181818;
+  font-size: 18px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: none;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .team_members_card--name {
+    width: 235px;
+  }
+}
+
+.team_members_card--name span.position {
+  color: #959595;
+  font-size: 18px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 26px;
+  display: block;
+}
+
+.team_members_card--experience {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 20px;
+  width: 86%;
+  height: 44px;
+  background-color: #E3B873;
+  text-align: center;
+  padding-top: 13px;
+}
+
+@media screen and (max-width: 375px) {
+  .team_members_card--experience {
+    width: 235px;
+  }
+}
+
+.team_members_card--icon {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+}
+
+.team_description--text {
+  color: #363636;
+  font-size: 20px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 34px;
+  width: 560px;
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .team_description--text {
+    display: none;
+  }
+}
+
+.medium_break_line.team {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  .medium_break_line.team {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .clients {
+    display: none;
+  }
+}
+
+.clients_wrapper {
+  padding-top: 513px;
+  height: 1530px;
+  background-image: url("../images/clients_background.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-color: rgba(243, 239, 239, 0.164);
+}
+
+.clients_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients_description .clients_description--heading {
+  color: #181818;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.clients_description .clients_description--heading_text {
+  color: #363636;
+  font-size: 20px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 27px;
+  width: 350px;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.clients_members_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 425px;
+  padding-top: 20px;
+}
+
+.clients_members_block .clients_members_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 50px;
+  background-color: #FFFFFF;
+}
+
+.clients_members_block .clients_members_card:last-child {
+  margin-right: 0px;
+}
+
+.clients_members_block .clients_members_card .clients_members_card--feedback {
+  color: #959595;
+  font-size: 15px;
+  font-family: FuturaBookC;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 27px;
+  width: 324px;
+  height: 221px;
+}
+
+.clients_members_block .clients_members_card .clients_members_card--service {
+  margin-top: 57px;
+  margin-left: -78px;
+}
+
+div.row {
+  width: 86%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+div.row .clients_members_card--photo {
+  margin-right: 20px;
+}
+
+div.row .clients_members_card--name {
+  width: 50%;
+}
+
+div.row .clients_members_card--name span {
+  color: #181818;
+  font-size: 18px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: none;
+  line-height: 23px;
+}
+
+.questions {
+  position: relative;
+  z-index: 2;
+}
+
+.questions_wrapper {
+  width: 60%;
+  height: 445px;
+  background-color: #131313;
+  margin: -245px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  .questions_wrapper {
+    width: 100%;
+    height: 500px;
+    background-color: #131313;
+    margin: -1px auto 0px;
+  }
+}
+
+.contacts_wrapper {
+  height: 960px;
+  position: relative;
+  background-image: url("../images/contacts_background.png");
+  background-repeat: no-repeat;
+  background-color: #181818;
+}
+
+@media screen and (max-width: 375px) {
+  .contacts_wrapper {
+    height: 475px;
+    background-image: none;
+    background-color: #181818;
+    margin-top: -1px;
+  }
+}
+
+.contacts_wrapper .contacts_foreground {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(3.47%, rgba(24, 24, 24, 0.9)), to(rgba(24, 24, 24, 0.72)));
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+  margin-top: 45px;
+  padding-top: 250px;
+}
+
+@media screen and (max-width: 375px) {
+  .contacts_wrapper .contacts_foreground {
+    height: 100%;
+    background: #131313;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+}
+
+.contacts_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts_information h2 {
+  color: #E3B873;
+  font-size: 20px;
+  font-family: "Yeseva One";
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 375px) {
+  .contacts_information h2 {
+    font-size: 18px;
+    line-height: 138.6%;
+    text-align: center;
+  }
+}
+
+.contacts_information img {
+  margin: 20px 0px 40px;
+  cursor: pointer;
+}
+
+.contacts_information img:hover {
+  opacity: 0.6;
+}
+
+.contacts_map_desktop {
+  cursor: pointer;
+  display: block;
+}
+
+@media screen and (max-width: 375px) {
+  .contacts_map_desktop {
+    display: none;
+  }
+}
+
+.contacts_map_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .contacts_map_mobile {
+    display: block;
+  }
+}
+/*# sourceMappingURL=main.css.map */

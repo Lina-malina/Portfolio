@@ -1,0 +1,123 @@
+.steps {
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.steps_wrapper {
+    height: 1616px;
+    background-color: $color-black;
+    margin-top: -455px;
+    @include flex();
+        .steps_context_block {
+            width: 85%;
+            height: 680px;
+            display: flex;
+            margin-top: -77px;
+        }
+}
+
+.steps_context_block--column-left {
+    flex-grow: 1;
+    @include flex($align: flex-start, $justify: flex-start);
+    flex-direction: column;
+    padding-right: 7%;
+}
+
+.steps_heading_block {
+    position: relative;
+        h3 {
+            @include font($size: 15px, $family: FuturaDemiC, $line: 21px, $transform: uppercase);
+            margin-bottom: 20px;
+        }
+        h2 {
+            @include font($color: $color-brown, $size: 27px, $line: 37px, $transform: uppercase);
+            margin-bottom: 95px;
+        }
+        img {
+            position: absolute;
+            top: 45%;
+            left: 125%;
+        }
+}
+
+.steps_description_block {
+    h3 {
+        @include font($size: 18px, $line: 25px, $transform: uppercase);
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        @include font($color: $color-brown, $size: 15px, $line: 23px, $transform: uppercase);
+        margin-bottom: 15px;
+    }
+
+    p {
+        @include font($size: 15px, $family: FuturaBookC, $line: 25px);
+    }
+}
+
+.steps_context_block--column-right {
+    flex-grow: 3;
+    @include flex();
+    flex-direction: column;
+        .steps_block {
+            @include flex();
+            flex-direction: column;
+            flex-grow: 1;
+            width: 100%;
+            padding-top: 60px;
+                .steps_block--row {
+                    @include flex($justify: space-between);
+                    flex-grow: 1;
+                    width: 100%;
+                }
+        }
+        .steps_image_block {
+            flex-grow: 1;
+            max-height: 376px;
+            padding-top: 20px;
+        }
+}
+
+.steps_block--step {
+    width: 130px;
+    height: 70px;
+        .steps_block--step_number {
+            width: 20px;
+            @include font($size: 15px, $line: 21px, $transform: uppercase);
+            opacity: 0.3;
+            border-bottom: 1px solid $color-brown;
+            margin-bottom: 10px;
+        }
+        .steps_block--step_text {
+            @include font($size: 15px, $family: FuturaBookC, $line: 18px);
+            opacity: 0.3;
+        }
+        .active {
+            opacity: 1;
+        }
+}
+
+.steps--pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+    cursor: pointer;
+        div.circles {
+            display: flex;
+            justify-content: space-between;
+            width: 130px;
+            margin: 0px 30px;
+                span {
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: rgba($color-dark-white, 0.3);
+                    &.active {
+                        background-color: $color-white;
+                    }
+                }
+        }
+}

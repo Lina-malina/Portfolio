@@ -1,0 +1,66 @@
+.contacts_wrapper {
+    @media screen and (max-width: $mobile) {
+        height: 475px;
+        background-image: none;
+        background-color: $color-secondary-black;
+        margin-top: -1px;
+    }
+
+    height: 960px;
+    position: relative;
+    background-image: url('../images/contacts_background.png');
+    background-repeat: no-repeat;
+    background-color: $color-secondary-black;
+        .contacts_foreground {
+            @media screen and (max-width: $mobile) {
+                height: 100%;
+                background: $color-black;
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+
+            @include flex();
+            flex-direction: column;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+            margin-top: 45px;
+            padding-top: 250px;
+        }
+}
+
+.contacts_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        h2 {
+            @media screen and (max-width: $mobile) {
+                font-size: 18px;
+                line-height: 138.6%;
+                text-align: center;
+            }
+            @include font($color: $color-brown, $size: 20px, $line: 28px, $transform: uppercase);
+        }
+        img {
+            margin: 20px 0px 40px;
+            cursor: pointer;
+                &:hover {
+                    opacity: 0.6;
+                }
+        }
+}
+
+.contacts_map_desktop {
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
+    cursor: pointer;
+    display: block;
+}
+
+.contacts_map_mobile {
+    @media screen and (max-width: $mobile) {
+        display: block;
+    }
+
+    display: none;
+}

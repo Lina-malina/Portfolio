@@ -1,0 +1,123 @@
+.team_wrapper {
+    @media screen and (max-width: $mobile) {
+        height: 1685px;
+        background-color: $color-black;
+        margin-top: 0px;
+      }
+    
+    height: 413px;
+    background-color: $color-black;
+    margin-top: -390px;
+}
+
+.team_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .team_description--heading {
+            @media screen and (max-width: $mobile) {
+                font-size: 22px;
+                line-height: 138.6%;
+            }
+
+            @include font($color: $color-white, $size: 20px, $line: 28px, $transform: uppercase);
+            margin-bottom: 15px;
+        }
+        .team_description--heading_text {
+            @media screen and (max-width: $mobile) {
+                font-size: 15px;
+                line-height: 135.84%;
+                width: 300px;
+                height: 42px;
+                margin-top: 25px;
+                text-align: center;
+            }
+
+            @include font($color: $color-white, $size: 20px, $family: FuturaBookC, $line: 27px);
+            width: 476px;
+            height: 57px;
+            margin-bottom: 40px;
+            margin-top: 25px;
+            text-align: center;
+        }
+}
+
+.team_members_block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    margin-bottom: 50px;
+}
+
+.team_members_card {
+    @media screen and (max-width: $mobile) {
+        margin-right: 0px;
+        margin-bottom: 80px;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    margin-right: 105px;
+        &:last-child {
+            margin-right: 0px;
+        }
+}
+
+.team_members_card--name {
+    @media screen and (max-width: $mobile) {
+        width: 235px;
+    }
+
+    width: 86%;
+    height: 93px;
+    background-color: $color-white;
+    margin-top: -83px; 
+    @include font($color: $color-secondary-black, $size: 18px, $line: 25px);
+    text-align: center;
+    padding-top: 20px;
+        span.position {
+            @include font($color: $color-secondary-gray, $size: 18px, $family: FuturaBookC, $line: 26px);
+            display: block;
+        }
+}
+
+.team_members_card--experience {
+    @media screen and (max-width: $mobile) {
+        width: 235px;
+    }
+
+    @include font($size: 13px, $line: 20px, $transform: uppercase); 
+    width: 86%;
+    height: 44px;
+    background-color: $color-brown;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.team_members_card--icon {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+
+.team_description--text {
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
+
+    @include font($color-dark-gray, $size: 20px, $family: FuturaBookC, $line: 34px);
+    width: 560px;
+    text-align: center;
+}
+
+.medium_break_line.team {
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
+
+    margin-bottom: 15px;
+}

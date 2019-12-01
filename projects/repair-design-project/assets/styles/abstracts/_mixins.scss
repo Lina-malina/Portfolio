@@ -1,0 +1,30 @@
+@mixin flex ($wrap: wrap, $align: center, $justify: center) {
+    display: flex;
+    flex-wrap: $wrap;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin link ($decor: none, $cursor: pointer) {
+    text-decoration: $decor;
+    cursor: $cursor;
+}
+
+@mixin font ($color: $color-white, $size: 14px, $family: 'Yeseva One', $weight: normal, $line: 16px, $transform: none) {
+    color: $color;
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    text-transform: $transform;
+    line-height: $line;
+}
+
+@mixin button ($width, $height, $background, $shadow, $border: 0px, $radius: 2px) {
+    width: $width;
+    height: $height;
+    background-color: $background;
+    border: $border;
+    box-shadow: $shadow;
+    border-radius: $radius;
+    cursor: pointer;
+}

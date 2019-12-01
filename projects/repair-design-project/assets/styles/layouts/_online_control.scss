@@ -1,0 +1,57 @@
+.online_control_wrapper {
+  @media screen and (max-width: $mobile) {
+    height: 890px;
+    background-color: $color-black;
+    margin-top: -1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  height: 630px;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.online_control_video--heading {
+  @media screen and (max-width: $mobile) {
+    font-size: 22px;
+    line-height: 138.6%;
+    width: 196px;
+  }
+
+  @include font($color-white, $size: 20px, $transform: uppercase);
+  margin-bottom: 20px;
+  width: 185px;
+}
+
+.online_control_video--icon {
+  @media screen and (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
+
+  @include flex($justify: space-between);
+  width: 115px;
+  margin-bottom: 50px;
+}
+
+.online_control--description {
+  @media screen and (max-width: $mobile) {
+    text-align: center;
+    margin: 22px 0px 40px;
+    width: 340px;
+    height: 140px;
+    font-size: 14px;
+    line-height: 169.8%;
+    color: $color-white;
+  }
+
+  @include font($color-secondary-black, 20px, FuturaBookC, normal, 34px);
+  text-align: center;
+  margin: 50px 0px 90px;
+  width: 710px;
+  height: 130px;
+}
+

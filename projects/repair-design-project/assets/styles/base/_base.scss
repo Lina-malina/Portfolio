@@ -1,0 +1,12 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+};
+.body_wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main {
+    position: relative;
+}

@@ -1,0 +1,116 @@
+.styles_wrapper {
+  @media screen and (max-width: $mobile) {
+    height: 410px;
+    background-image: none;
+    background-color: $color-black;
+    margin-top: -1px;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  height: 865px;
+  background-image: url('../images/styles_background.png');
+  background-size: cover;
+  display: flex;
+}
+
+.styles_text_wrapper {
+  @media screen and (max-width: $mobile) {
+    display: block;
+    height: 66px;
+    width: 310px;
+    margin: 0px auto 25px;
+  }
+
+  flex-grow: 1;
+  height: 625px;
+  margin: 137px 14% 0px 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    .styles_heading {
+      @media screen and (max-width: $mobile) {
+        display: block;
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+
+      @include font($color: $color-brown, $size: 27px, $line: 37px, $transform: uppercase);
+      margin-bottom: 40px;
+    }
+}
+
+.styles_list {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  height: 515px;
+  width: 300px;
+    .styles_list--item {
+      margin-bottom: 20px;
+        .styles_list--link {
+          @include link();
+          @include font($color: $color-white, $size: 20px, $family: Proxima Nova, $line: 30px);
+            &.active {
+              border-bottom: 1px solid $color-brown; 
+              color: $color-brown;
+            }
+            &:hover {
+              opacity: .75;
+            }
+        }
+    }
+}
+
+.styles_pictures {
+  @media screen and (max-width: $mobile) {
+    margin-right: 0px;
+  }
+
+  flex-grow: 4;
+  margin-right: 6%;
+  display: flex;
+  flex-wrap: wrap;
+    .styles_pictures_container {
+      @media screen and (max-width: $mobile) {
+        display: none;
+      }
+    }
+      .styles_pictures_container.first {
+        margin: -40px 40px 40px 0px;
+      }
+      & .second {
+        margin-top: -110px;
+      }
+      & .fourth {
+        margin-left: 40px;
+        margin-top: -360px;
+      }
+}
+
+.styles_pictures--mobile {
+  display: none;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+    position: relative;
+      img:first-child {
+        position: absolute;
+        left: 5%;
+        top: 38%;
+      }
+      img:nth-child(2) {
+       display: block;
+       margin: 0 auto;
+      }
+      img:nth-child(3) {
+        position: absolute;
+        left: 85%;
+        top: 38%;
+      }
+  }  
+}

@@ -1,0 +1,24 @@
+.online_control_video {
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -345px;
+  margin-bottom: 75px;
+    iframe {
+      width: 820px;
+      height: 435px;
+
+      @media screen and (max-width: $mobile) {
+        width: 340px;
+        height: 207px;
+      }
+    }
+}

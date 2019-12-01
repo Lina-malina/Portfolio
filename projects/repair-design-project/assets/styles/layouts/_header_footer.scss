@@ -1,0 +1,79 @@
+.header,
+.footer {
+  background-color: $color-black;
+  height: 83px;
+  @include flex();
+}
+
+.wrapper {
+  @include flex($justify: space-around);
+  flex-grow: 0.5;
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.logo {
+  margin-right: 60px;
+  margin-left: 35px;
+
+  @media screen and (max-width: $mobile) {
+    margin: 0px;
+  }
+}
+
+.logo--link {
+  @media screen and (max-width: $mobile) {
+    font-size: 12px;
+  }
+
+  @include link();
+  @include font($color-brown, $family: FuturaDemiC, $weight: bold, $transform: uppercase);
+}
+
+.navigation_list {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  @include flex();
+}
+
+.navigation_list--item {
+  margin-right: 47px;
+    &:last-child {
+      margin-right: 0px;
+    }
+}
+
+.navigation_list--link {
+  @include link();
+  @include font($family: FuturaBookC, $transform: uppercase);
+    &.active {
+      color: $color-brown;
+    }
+    &:hover {
+      opacity: .75;
+    }
+}
+
+.tel_number {
+  @media screen and (max-width: $mobile) {
+    margin: 0px;
+    font-size: 12px;
+    border-bottom: 0px;
+    color: white;
+  }
+
+  @include font($color-brown, $family: FuturaDemiC);
+  @include link();
+  border-bottom: 1px solid  $color-brown;
+  margin: 0px 45px 0px 67px;
+}
+
+.footer {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}

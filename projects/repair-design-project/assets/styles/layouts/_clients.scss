@@ -1,0 +1,73 @@
+.clients {
+    @media screen and (max-width: $mobile) {
+        display: none;
+    }
+}
+.clients_wrapper {
+    padding-top: 513px;
+    height: 1530px;
+    background-image: url('../images/clients_background.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-color: $color-background;
+}
+
+.clients_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .clients_description--heading {
+            @include font($color: $color-secondary-black, $size: 20px, $line: 28px, $transform: uppercase);
+            margin-bottom: 15px;
+        }
+        .clients_description--heading_text {
+            @include font($color: $color-dark-gray, $size: 20px, $family: FuturaBookC, $line: 27px);
+            width: 350px;
+            margin-bottom: 40px;
+            margin-top: 25px;
+            text-align: center;
+        }
+}
+
+.clients_members_block {
+    display: flex;
+    flex-wrap: wrap;
+    height: 425px;
+    padding-top: 20px;
+        .clients_members_card {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            margin-right: 50px;
+            background-color: $color-white;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                .clients_members_card--feedback {
+                    @include font($color: $color-secondary-gray, $size: 15px, $family: FuturaBookC, $line: 27px);
+                    width: 324px;
+                    height: 221px;
+                }
+                .clients_members_card--service {
+                    margin-top: 57px;
+                    margin-left: -78px;
+                }
+        }
+}
+
+div.row {
+    width: 86%;
+    margin-bottom: 20px;
+    @include flex($justify: flex-start);
+        .clients_members_card--photo {
+            margin-right: 20px;
+        }
+        .clients_members_card--name {
+            width: 50%;
+                span {
+                    @include font($color: $color-secondary-black, $size: 18px, $line: 23px);
+                }
+        }
+}

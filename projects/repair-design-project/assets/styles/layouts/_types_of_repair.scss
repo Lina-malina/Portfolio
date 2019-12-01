@@ -1,0 +1,123 @@
+.types_of_repair_wrapper {
+  @media screen and (max-width: $mobile) {
+    height: 1770px;
+    padding-top: 0px;
+    margin-top: -1px;
+    background-color: $color-black;
+  }   
+
+  height: 1920px;
+  background-color: $color-background;
+  padding-top: 135px;
+}
+
+.types_of_repair_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    .types_of_repair--heading {
+      @media screen and (max-width: $mobile) {
+        font-size: 22px;
+        line-height: 138.6%;
+        color: $color-white;
+      }    
+
+      @include font($color: $color-secondary-black, $size: 20px, $line: 28px, $transform: uppercase);
+      margin-bottom: 15px;
+    }
+}
+
+.types_of_repair_circle_and_form_wrapper {
+  @include flex($wrap: nowrap, $justify: space-between);
+  padding-top: 210px;
+}
+
+.types_of_repair_circle {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+
+  @include font($color: $color-dark-gray, $size: 18px, $family: FuturaMediumC, $line: 21px); 
+  flex-grow: 2;
+  position: relative;
+    .parts_circle {
+      position: absolute;
+      border: 3px solid #E3B873;
+      width: 654px;
+      height: 630px;
+      top: -6%;
+      left: -20%;
+      border-radius: 50%;
+        &::before {
+          content: "";
+          width: 26%;
+          background-color: $color-white;
+          height: 100%;
+          position: absolute;
+        }
+    }
+}
+
+.types_of_repair_circle--part {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+    &.part_1 {
+      top: 3%;
+      right: 8%;
+    }
+    &.part_2 {
+      top: 24%;
+      right: 28%;
+    }
+    &.part_3 {
+      top: 53%;
+      right: 25%;
+    }
+    &.part_4 {
+      top: 82%;
+      right: 23.5%;
+    }
+}
+
+.types_of_repair_circle--part_number {
+  @include font($size: 18px, $line: 22px); 
+  border-radius: 50%;
+  max-width: 40px;
+  width: 100%;
+  min-height: 40px;
+  height: 100%;
+  background-color: $color-brown;
+  text-align: center;
+  padding-top: 10px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.types_of_repair_circle--part_text{
+  &.free {
+    width: 145px
+  }
+  &.get {
+    width: 220px;
+  }
+}
+
+.types_of_repair_piggy_block {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }   
+
+  @include flex($wrap: nowrap, $justify: flex-start);
+  width: 440px;
+  margin-top: 60px;
+  margin-left: -30px;
+    p {
+      @include font($color: $color-brown, $size: 20px, $family: FuturaDemiC, $line: 25px); 
+      display: inline-block;
+      width: 220px;
+      margin-top: -15px;
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+}

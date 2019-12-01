@@ -1,0 +1,19 @@
+.questions {
+    position: relative;
+    z-index: 2;
+}
+.questions_wrapper {
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+        height: 500px;
+        background-color: $color-black;
+        margin: -1px auto 0px;
+    }
+
+    width: 60%;
+    height: 445px;
+    background-color: $color-black;
+    margin: -245px auto;
+    @include flex();
+}
+

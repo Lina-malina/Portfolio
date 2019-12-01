@@ -6,121 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
-
 </head>
 
 <body>
-    <header class="info">
-        <div class="info_avatar">
-            <img src="./assets/images/BnXACu6CHJA.jpg" alt="my photo" class="info_avatar--image">
-        </div>
-        <div class="info_description">
-            <h1 class="info--name">Angelina Pobyvanets</h1>
-            <a href="https://github.com/Lina-malina" class="info--link git_hub_link" target="_blank">Lina-malina</a>
-        </div>
-    </header>
-    <main>
-        <section class="education">
-            <div class="education_accordion">
-                <h2 class="education_heading">Education <span>&#709;</span></h2>
-            </div>
-            <div class="education_panel">
-                <ul class="education_list">
-                    <li class="education_list--item">School <br><span>2001-2010</span></li>
-                    <li class="education_list--item">Lyceum <br><span>2010-2012</span></li>
-                    <li class="education_list--item">BSMU <br><span>2012-2017</span></li>
-                    <li class="education_list--item">BSEU <br><span>2017-2018</span></li>
-                </ul>
-            </div>
-        </section>
-        <section class="portfolio">
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <!--Desktop slide "theyalow"-->
-                        <div class="desktop_slide">
-                            <div class="desktop_slide--description">
-                                <h2>Theyalow</h2>
-                                <ul>
-                                    <li>Pixel-perfect</li>
-                                    <li>Layout and positioning</li>
-                                    <li>Adaptive design</li>
-                                </ul>
-                                <div class="desktop_slide--tap">Tap on image to see the project &gt;</div>
-                            </div>
-                            <div class="desktop_slide--image">
-                                <a href="./projects/theyalow/index.html">
-                                    <img src="./assets/images/theyalow_desc.png" alt="theyalow image" class="desktop_slide--image theyalow">
-                                </a>
-                            </div>
-                        </div>
-                        <!--Mobile slide "theyalow"-->
-                        <div class="mobile_slide">
-                            <button class="mobile_slide--show_button" id="theyalow_button"
-                                onclick="changeDescription(this)">Show description</button>
-                            <a href="./projects/theyalow/index.html">
-                                <img src="./assets/images/theyalow.png" alt="theyalow image" class="mobile_slide--image theyalow">
-                            </a>
-                            <div class="mobile_slide--description" id="theyalow_description">
-                                <h2>Theyalow</h2>
-                                <ul>
-                                    <li>Pixel-perfect</li>
-                                    <li>Layout and positioning</li>
-                                    <li>Adaptive design</li>
-                                </ul>
-                            </div>
-                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header class="row flex-column-reverse flex-sm-row">
+                    <div class="col-sm-3 d-flex justify-content-center avatar">
+                        <img src="./assets/images/avatar.jpg" alt="my photo" class="avatar--image">
                     </div>
-                    <div class="swiper-slide">
-                        <!--Desktop slide "repair"-->
-                        <div class="desktop_slide">
-                            <div class="desktop_slide--description">
-                                <h2>Repair-design-project</h2>
-                                <ul>
-                                    <li>Responsive design</li>
-                                    <li>Youtube integration</li>
-                                    <li>SCSS</li>
-                                </ul>
-                                <div class="desktop_slide--tap">Tap on image to see the project &gt;</div>
+                    <div class="col-sm-6 d-flex align-items-center justify-content-center info">
+                        <div>
+                            <h1 class="name">Angelina Pobyvanets</h1>
+                            <div class="list-group">
+                                <a href="https://github.com/Lina-malina" class="link git_link" target="_blank">Lina-malina</a>
+                                <a href="https://vk.com/id270540152" class="link vk_link" target="_blank">Ангелина Федорович</a>
                             </div>
-                            <div class="desktop_slide--image">
-                                <a href="./projects/repair-design-project/index.html">
-                                    <img src="./assets/images/repair_desk.png" alt="repair image" class="mobile_slide--image repair">
-                                </a>
+                        </div>  
+                    </div>
+                </header>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col">
+                <div class="accordion" id="accordionExample">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <div class="text-info" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Education
                             </div>
-                        </div>
-                        <!--Mobile slide "repair"-->
-                        <div class="mobile_slide">
-                            <button class="mobile_slide--show_button" id="repair_button"
-                                onclick="changeDescription(this)">Show description</button>
-                            <a href="./projects/repair-design-project/index.html">
-                                <img src="./assets/images/repair.png" alt="theyalow image" class="mobile_slide--image theyalow">
-                            </a>
-                            <div class="mobile_slide--description" id="repair_description">
-                                <h2>Repair-design-project</h2>
-                                <ul>
-                                    <li>Responsive design</li>
-                                    <li>Youtube integration</li>
-                                    <li>SCSS</li>
-                                </ul>
-                            </div>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul class="education_list">
+                                <li class="education_list--item">School <br><span>2001-2010</span></li>
+                                <li class="education_list--item">Lyceum <br><span>2010-2012</span></li>
+                                <li class="education_list--item">BSMU <br><span>2012-2017</span></li>
+                                <li class="education_list--item">BSEU <br><span>2017-2018</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="row pt-3">
+            <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slide_container d-flex">
+                                <div class="project_description col-5" id="test">
+                                    <h3>Repair-design-project</h3>
+                                    <ul>
+                                        <li>Responsive design</li>
+                                        <li>Youtube integration</li>
+                                        <li>SCSS</li>
+                                    </ul>
+                                    <div class="tap border border-info rounded w-100 p-2 mt-5">
+                                        Tap on image to see the project &gt;
+                                    </div>
+                                </div>
+                                <div class="project_image col-sm-7" id="mobile_container">
+                                    <div class="mobile_button d-flex justify-content-center">
+                                        <button type="button" class="mobile_show_btn btn btn-info" id="show_btn_repair">Show description</button>
+                                    </div>
+                                    <div class="mobile_description hidden" id="mobile_description">
+                                        <h5>Repair-design-project</h5>
+                                        <ul>
+                                            <li>Responsive design</li>
+                                            <li>Youtube integration</li>
+                                            <li>SCSS</li>
+                                        </ul>
+                                    </div>
+                                    <a href="./projects/repair-design-project/index.html">
+                                        <img src="./assets/images/repair_desk.png" class="d-block w-100" alt="repair design project">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide_container d-flex">
+                                <div class="project_description col-5">
+                                    <h3>Theyalow</h3>
+                                    <ul>
+                                        <li>Pixel-perfect</li>
+                                        <li>Layout and positioning</li>
+                                        <li>Adaptive design</li>
+                                    </ul>
+                                    <div class="tap border border-info rounded w-100 p-2 mt-5">
+                                        Tap on image to see the project &gt;
+                                    </div>
+                                </div>
+                                <div class="project_image col-sm-7" id="mobile_container">
+                                    <div class="mobile_button d-flex justify-content-center">
+                                        <button type="button" class="mobile_show_btn btn btn-info" id="show_btn_theyalow">Show description</button>
+                                    </div>
+                                    <div class="mobile_description hidden" id="mobile_description_theyalow">
+                                        <h5>Theyalow</h5>
+                                        <ul>
+                                            <li>Pixel-perfect</li>
+                                            <li>Layout and positioning</li>
+                                            <li>Adaptive design</li>
+                                        </ul>
+                                    </div>
+                                    <a href="./projects/theyalow/index.html">
+                                        <img src="./assets/images/theyalow_desc.png" class="d-block w-100" alt="theyalow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="nav_arrows">&lt;</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="nav_arrows">&gt;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
