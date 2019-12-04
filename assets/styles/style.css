@@ -51,6 +51,16 @@ html {
   .mobile_show_btn {
     display: block;
   }
+  .mobile_description {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 2.5%;
+    top: 29px;
+    bottom: 0px;
+    right: 3%;
+  }
 }
 
 .info {
